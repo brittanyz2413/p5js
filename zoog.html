@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220,230,100);
+fill(150)
+  strokeWeight(2)
+//body
+  ellipse(200,270,140,190)
+  //ear
+      ellipse(170,50,40,90)    
+ ellipse(230,50,40,90)
+  //head
+ ellipse(200,120,100,120)
+  //whiskers
+  stroke(0)
+  line(206,120,230,110)
+  line(206,120,230,120)
+  line(206,120,230,130)
+  //left whisper
+  line(194,120,170,110)
+  line(194,120,170,120)
+  line(194,120,170,130)
+ //nose
+  fill(255,200,200)
+ triangle(210,130,200,120,190,130)
+  //eyes
+   stroke(0,0,0)
+  fill(0)
+  ellipse(180,100,25,25)
+  ellipse(220,100,25,25)
+  //feet
+  ellipse(170,360,50,60)
+  ellipse(230,360,50,60)
+  //arms
+  fill(150)
+  ellipse(140,260,60,70)  
+  ellipse(260,260,60,70)
+  //points
+  fill(255,190,100)
+ point(197,127)
+  point(203,127)
+  rect(270,30,105,50)
+  fill(100,125,255)
+  textSize(30)
+  text("bunny",280,60)
+}
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/brittanyz2413/p5js/blob/master/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
